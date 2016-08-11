@@ -18,6 +18,7 @@ gulp.task("copy_asset_to_dist", () => {
     let dist = gulp.src([
         "./src/**/*.html",
         "./src/**/*.jpg",
+        "./src/**/*.png",
     ]).pipe(gulp.dest("./dist/"));
     m.add(dist);
 
