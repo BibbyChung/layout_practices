@@ -22,6 +22,12 @@ gulp.task("copy_asset_to_dist", () => {
     ]).pipe(gulp.dest("./dist/"));
     m.add(dist);
 
+    let font = gulp.src([
+        "./node_modules/font-awesome/fonts/**/*.*"
+    ]).pipe(gulp.dest("./dist/fonts/"));
+    m.add(font);
+    
+
     return m;
 
 });

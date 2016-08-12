@@ -1,0 +1,78 @@
+nav{
+
+    //@extend %test;
+    max-width: $max-width;//$container-width;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 75px;
+
+    .logo{
+        
+        @extend %vertical;
+        float: left;
+        width: 140px;
+        height: 50px;
+
+    }
+
+    ul{
+
+        @extend %vertical;        
+        float:right;
+        li{
+            padding: 0 20px;
+            display: inline;
+
+            a{
+                &.active{
+                    font-weight: bolder;
+                    color: $font-color-active;
+                }
+            }
+        }
+    }
+
+}
+
+.cleanBox{
+
+    height: 500px;
+    background-image: url("/images/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: auto;
+
+    h1{
+        @extend %align-center;
+        color:white;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+    .content{
+
+        @extend %align-center;
+
+        h3{
+            color: white;
+            float: left;
+        }
+        a{
+            margin: 0 20px;
+            font-size: $h3Size; 
+            line-height: 1.5;  
+            letter-spacing: -.05rem;
+            float: right;
+        }
+
+    }
+
+    button{
+
+        @extend %btn-large;
+        @extend %align-center;
+        color: white;
+        
+    }
+
+}
