@@ -8,8 +8,8 @@ nav{
 
     .logo{
         
-        @extend %vertical;
-        float: left;
+        @extend %align-vertical;
+        @extend .u-pull-left;
         width: 140px;
         height: 50px;
 
@@ -17,9 +17,10 @@ nav{
 
     ul{
 
-        @extend %vertical;        
-        float:right;
+        @extend %align-vertical;    
+        @extend .u-pull-right; 
         li{
+
             padding: 0 20px;
             display: inline;
 
@@ -73,6 +74,129 @@ nav{
         @extend %align-center;
         color: white;
         
+    }
+
+}
+
+.unsubscribe{
+
+    height: 330px;
+
+    .my-container{
+
+        @extend %align-vertical;
+        @extend %align-center;
+        width: $litter-container;
+
+        .aside{
+
+            @extend .u-pull-left;
+            width: 390px;
+            margin-top: 35px;
+
+            h2{
+
+                font-weight: bolder;
+
+            }
+            p{
+
+                color: #979797;
+            
+            }
+
+        }
+        img{
+
+            @extend .u-pull-right;
+            margin-left: 60px;
+
+        }
+
+    }
+
+}
+
+.combine{
+
+    height: 515px;
+    background-color: #00587f;
+
+    .my-container{
+
+        @extend %align-vertical;
+        @extend %align-center;
+        width: $litter-container;
+        
+        img{
+
+            float: left;
+
+        }
+
+        .aside{
+                        
+            float: right;
+            width: 390px;
+            height: 395px;        
+            margin-left: 60px;
+
+            div{
+             
+                @extend %align-vertical;
+                h2, p, button{
+
+                    color: white;
+                
+                }
+            
+            }
+
+        }
+
+    }
+
+}
+
+.rollup{
+
+    height: 398px;
+    background-color: #41c1c8;
+
+    .my-container{
+        @extend %align-vertical;
+        @extend %align-center;
+        width: $litter-container;
+
+        .aside{
+
+            width: 390px;
+            height: 398px;
+            float: left;
+
+            div{
+
+                @extend %align-vertical;
+                h2, p, button{
+
+                    color: white;
+
+                }
+            
+            }
+
+        }
+
+        img{
+
+            float: right;
+            margin-left: 60px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+        }
+
     }
 
 }
