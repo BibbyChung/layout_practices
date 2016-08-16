@@ -1,6 +1,6 @@
+//@extend %test;
 nav{
 
-    //@extend %test;
     max-width: $max-width;//$container-width;
     padding: 0 15px;
     margin: 0 auto;
@@ -17,8 +17,8 @@ nav{
 
     ul{
 
-        @extend %align-vertical;    
-        @extend .u-pull-right; 
+        @extend %align-vertical;
+        float: right;    
         li{
 
             padding: 0 20px;
@@ -91,7 +91,7 @@ nav{
         .aside{
 
             @extend .u-pull-left;
-            width: 390px;
+            width: $index-aside-width;
             margin-top: 35px;
 
             h2{
@@ -101,7 +101,7 @@ nav{
             }
             p{
 
-                color: #979797;
+                color: $p-color;
             
             }
 
@@ -137,7 +137,7 @@ nav{
         .aside{
                         
             float: right;
-            width: 390px;
+            width: $index-aside-width;
             height: 395px;        
             margin-left: 60px;
 
@@ -158,20 +158,22 @@ nav{
 
 }
 
+$rollup-height: 398px;
 .rollup{
 
-    height: 398px;
+    height: $rollup-height;
     background-color: #41c1c8;
 
     .my-container{
+
         @extend %align-vertical;
         @extend %align-center;
         width: $litter-container;
 
         .aside{
 
-            width: 390px;
-            height: 398px;
+            width: $index-aside-width;
+            height: $rollup-height;
             float: left;
 
             div{
@@ -199,4 +201,137 @@ nav{
 
     }
 
+}
+
+.unroll{
+
+    height: 400px;
+
+    .my-container{
+
+        @extend %align-vertical;
+        @extend %align-center;
+        width: $litter-container;
+
+        .img{
+
+            float: left;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+        }
+
+        .aside{
+
+            float: right;
+            width: $index-aside-width;
+            height: 400px;
+
+            div{
+
+                @extend %align-vertical;
+
+                p{
+
+                    color: $p-color;
+
+                }
+
+                img{
+
+                    vertical-align: middle;
+
+                }
+
+                button{
+
+                    position: relative;
+                    top: 2px;
+                    margin-left: 12px;
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.happy{
+
+    height: 600px;
+    background-color: #F9F9F9;
+
+    .vertial{
+
+        @extend %align-vertical;
+        h2{
+            
+            @extend %align-center;
+            padding-bottom: 15px ;
+            font-weight: bolder;
+
+        }
+
+        ul.brand{
+
+            @extend %align-center;
+            padding: 15px 0;
+            margin-bottom: 0;
+
+            li{
+                
+                padding: 0 20px;
+                display: inline;
+
+            }
+
+        }
+
+        .authors{
+
+            @extend .row;
+            @extend %align-center;
+            max-width: $max-width;
+            padding: 60px 15px;
+            p{
+
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 1.25em;
+                color: $p-color;
+
+            }
+            .author{
+
+                @extend .four;
+                @extend .columns;
+                
+                img{
+
+                    vertical-align: middle;
+
+                }
+                a{
+
+                    display: inline;
+
+                }
+                &:before{
+
+                    content: '“';
+                    font-size: 8rem;
+                    color: #f7931d;
+                    line-height: 1em;
+                    height: 40px;
+                    display: block;
+                
+                }   
+
+            }
+        }
+    }
 }
