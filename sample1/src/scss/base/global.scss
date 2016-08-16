@@ -24,8 +24,10 @@
 }
 
 %btn-large{
+
     width: 178px;
     height: 62px;
+
 }
 
 $h1Size:3.6rem;
@@ -47,6 +49,22 @@ h4 { font-size: $h4Size; line-height: 1.6;  letter-spacing: 0;       }
   h2 { font-size: 3.0rem; }
   h3 { font-size: 2.4rem; }
   h4 { font-size: 1.5rem; }
+}
+
+@media ($bp-zero) and ($bp-less-than-phablet){
+
+    .phablet-hide{
+
+        display: none !important;
+
+    }
+
+    .my-container{
+
+        width: $container-width-larger-than-mobile;
+
+    }
+
 }
 
 

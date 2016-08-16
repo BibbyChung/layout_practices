@@ -1,29 +1,21 @@
 //@extend %test;
 nav{
-
-    max-width: $max-width;//$container-width;
+    max-width: $large-container;//$container-width;
     padding: 0 15px;
     margin: 0 auto;
     height: 75px;
-
+    overflow: auto;
     .logo{
-        
         @extend %align-vertical;
-        @extend .u-pull-left;
-        width: 140px;
-        height: 50px;
-
+        float: left;
     }
-
     ul{
-
         @extend %align-vertical;
+        @extend .phablet-hide;
         float: right;    
         li{
-
             padding: 0 20px;
             display: inline;
-
             a{
                 &.active{
                     font-weight: bolder;
@@ -32,7 +24,6 @@ nav{
             }
         }
     }
-
 }
 
 .cleanBox{
@@ -86,13 +77,13 @@ nav{
 
         @extend %align-vertical;
         @extend %align-center;
-        width: $litter-container;
+        max-width: $litter-container; 
 
         .aside{
 
-            @extend .u-pull-left;
             width: $index-aside-width;
-            margin-top: 35px;
+            display: table-cell;
+            vertical-align: middle;            
 
             h2{
 
@@ -108,8 +99,11 @@ nav{
         }
         img{
 
-            @extend .u-pull-right;
-            margin-left: 60px;
+            //@extend .u-pull-right;
+            @extend .phablet-hide;
+            display: table-cell;
+            vertical-align: middle;
+            padding-left: 60px;
 
         }
 
@@ -295,7 +289,7 @@ $rollup-height: 398px;
 
             @extend .row;
             @extend %align-center;
-            max-width: $max-width;
+            max-width: $large-container;
             padding: 60px 15px;
             p{
 
@@ -313,6 +307,7 @@ $rollup-height: 398px;
                 img{
 
                     vertical-align: middle;
+                    border-radius: 100%;
 
                 }
                 a{
@@ -334,4 +329,39 @@ $rollup-height: 398px;
             }
         }
     }
+}
+
+footer{
+
+    height: 250px;
+
+    img{
+
+        @extend %align-center;
+
+    }
+    .vertial{
+
+        @extend %align-vertical;
+        ul{
+
+            @extend %align-center;
+            padding: 15px 0;
+            li{
+
+                padding: 5px 10px;
+                display: inline;
+
+            }
+
+        }
+
+    }
+    div{
+
+        @extend %align-center;
+        color: $p-color;
+
+    }
+
 }

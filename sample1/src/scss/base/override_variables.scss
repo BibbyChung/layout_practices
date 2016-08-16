@@ -1,11 +1,16 @@
 // myself
-$max-width: 1260px;
+$large-container: 1260px;
 $litter-container: 780px;
 $p-color:  #979797;
 $index-aside-width: 390px;
 
 // override
-$container-width: $max-width;
+$container-width: $large-container;
 $button-height: 45px;
+
+
+$bp-zero: "min-width: 0px" !default;
+$bp-less-than-phablet   : "max-width: 550px" !default;
+
 
 
