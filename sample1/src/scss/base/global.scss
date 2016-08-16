@@ -19,7 +19,9 @@
     
     overflow: auto;
     display: table;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
 
 }
 
@@ -59,9 +61,19 @@ h4 { font-size: $h4Size; line-height: 1.6;  letter-spacing: 0;       }
 
     }
 
-    .my-container{
+    .phablet-align-center-width100{
 
-        width: $container-width-larger-than-mobile;
+        overflow: auto !important;
+        display: table !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none !important;
+
+    }
+
+    .phablet-width80{
+
+        width: $container-width-larger-than-mobile !important;
 
     }
 
@@ -79,9 +91,4 @@ a{
     }
 }
 
-.myContainer{
-
-    position: relative;
-
-}
 

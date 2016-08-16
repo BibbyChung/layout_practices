@@ -6,12 +6,16 @@ nav{
     height: 75px;
     overflow: auto;
     .logo{
+
+        @extend .phablet-align-center-width100;
+
         @extend %align-vertical;
         float: left;
     }
     ul{
-        @extend %align-vertical;
         @extend .phablet-hide;
+
+        @extend %align-vertical;
         float: right;    
         li{
             padding: 0 20px;
@@ -42,31 +46,31 @@ nav{
         margin-bottom: 20px;
     }
     .content{
-
+        @extend .phablet-width80;
         @extend %align-center;
+        margin-bottom: 20px;
 
         h3{
+            @extend .phablet-align-center-width100;
             color: white;
-            float: left;
+            display: table-cell;
+            vertical-align: middle;
         }
         a{
-            margin: 0 20px;
+            @extend .phablet-align-center-width100;
+            padding: 0 20px;
+            display: table-cell;
+            vertical-align: middle;
             font-size: $h3Size; 
             line-height: 1.5;  
             letter-spacing: -.05rem;
-            float: right;
         }
-
     }
-
     button{
-
         @extend %btn-large;
         @extend %align-center;
         color: white;
-        
     }
-
 }
 
 .unsubscribe{
@@ -75,12 +79,15 @@ nav{
 
     .my-container{
 
+        @extend .phablet-width80;
+
         @extend %align-vertical;
         @extend %align-center;
         max-width: $litter-container; 
 
         .aside{
 
+            // @extend %test;
             width: $index-aside-width;
             display: table-cell;
             vertical-align: middle;            
@@ -99,7 +106,6 @@ nav{
         }
         img{
 
-            //@extend .u-pull-right;
             @extend .phablet-hide;
             display: table-cell;
             vertical-align: middle;
