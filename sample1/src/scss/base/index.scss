@@ -76,127 +76,82 @@ nav{
 .unsubscribe{
 
     height: 330px;
-
     .my-container{
-
         @extend .phablet-width80;
-
         @extend %align-vertical;
         @extend %align-center;
         max-width: $litter-container; 
-
         .aside{
-
-            // @extend %test;
             width: $index-aside-width;
             display: table-cell;
             vertical-align: middle;            
-
             h2{
-
                 font-weight: bolder;
-
             }
             p{
-
                 color: $p-color;
-            
             }
-
         }
         img{
-
             @extend .phablet-hide;
             display: table-cell;
             vertical-align: middle;
             padding-left: 60px;
-
         }
-
     }
-
 }
 
 .combine{
-
     height: 515px;
     background-color: #00587f;
-
     .my-container{
-
+        @extend .phablet-width80;
         @extend %align-vertical;
         @extend %align-center;
-        width: $litter-container;
-        
+        max-width: $litter-container;
         img{
-
-            float: left;
-
+            @extend .phablet-hide;
+            display: table-cell;
+            vertical-align: middle;
+            padding-right: 60px;
         }
-
         .aside{
-                        
-            float: right;
-            width: $index-aside-width;
-            height: 395px;        
-            margin-left: 60px;
-
+            display: table-cell;
+            vertical-align: middle;
+            max-width: $index-aside-width;
             div{
-             
-                @extend %align-vertical;
                 h2, p, button{
-
                     color: white;
-                
                 }
-            
             }
-
         }
-
     }
-
 }
-
-$rollup-height: 398px;
+ 
 .rollup{
-
-    height: $rollup-height;
+    height: 398px;
     background-color: #41c1c8;
-
     .my-container{
-
+        @extend .phablet-width80;
         @extend %align-vertical;
         @extend %align-center;
         width: $litter-container;
-
         .aside{
-
             width: $index-aside-width;
-            height: $rollup-height;
-            float: left;
-
+            display: table-cell;
+            vertical-align: middle;
             div{
-
-                @extend %align-vertical;
                 h2, p, button{
-
                     color: white;
-
                 }
-            
             }
-
         }
-
         img{
-
-            float: right;
-            margin-left: 60px;
-            position: absolute;
-            right: 0;
-            bottom: 0;
-
+            @extend .phablet-hide;
+            display: table-cell;
+            vertical-align: middle;
+            padding-left: 60px;
+            margin-top: 58px;
         }
 
     }
@@ -204,60 +159,37 @@ $rollup-height: 398px;
 }
 
 .unroll{
-
     height: 400px;
-
     .my-container{
-
+        @extend .phablet-width80;
         @extend %align-vertical;
         @extend %align-center;
         width: $litter-container;
-
         .img{
-
-            float: left;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-
+            @extend .phablet-hide;
+            display: table-cell;
+            vertical-align: middle;
+            padding-top: 62px;
         }
-
         .aside{
-
-            float: right;
+            display: table-cell;
+            vertical-align: middle;
             width: $index-aside-width;
-            height: 400px;
-
             div{
-
-                @extend %align-vertical;
-
                 p{
-
                     color: $p-color;
-
                 }
-
                 img{
-
                     vertical-align: middle;
-
                 }
-
                 button{
-
                     position: relative;
                     top: 2px;
                     margin-left: 12px;
-
                 }
-
             }
-
         }
-
     }
-
 }
 
 .happy{

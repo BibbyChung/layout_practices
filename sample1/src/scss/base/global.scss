@@ -44,40 +44,6 @@ h2 { font-size: $h2Size; line-height: 1.35; letter-spacing: -.08rem; }
 h3 { font-size: $h3Size; line-height: 1.5;  letter-spacing: -.05rem; }
 h4 { font-size: $h4Size; line-height: 1.6;  letter-spacing: 0;       }
 
-@media (#{$bp-larger-than-phablet}) {
-//   h1 { font-size: 5.0rem; }
-//   h2 { font-size: 4.2rem; }
-  h1 { font-size: 3.6rem; }
-  h2 { font-size: 3.0rem; }
-  h3 { font-size: 2.4rem; }
-  h4 { font-size: 1.5rem; }
-}
-
-@media ($bp-zero) and ($bp-less-than-phablet){
-
-    .phablet-hide{
-
-        display: none !important;
-
-    }
-
-    .phablet-align-center-width100{
-
-        overflow: auto !important;
-        display: table !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        float: none !important;
-
-    }
-
-    .phablet-width80{
-
-        width: $container-width-larger-than-mobile !important;
-
-    }
-
-}
 
 
 $font-color-active: black;
