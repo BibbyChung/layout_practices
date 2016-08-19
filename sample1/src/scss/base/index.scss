@@ -31,7 +31,7 @@ nav{
 }
 
 .cleanBox{
-
+    width: 100%;
     height: 500px;
     background-image: url("/images/hero.jpg");
     background-repeat: no-repeat;
@@ -193,113 +193,84 @@ nav{
 }
 
 .happy{
-
-    height: 600px;
     background-color: #F9F9F9;
-
-    .vertial{
-
-        @extend %align-vertical;
+    padding: 60px 0;
+    .my-container{
+        @extend .phablet-width80; 
+        @extend %align-center;
         h2{
-            
             @extend %align-center;
-            padding-bottom: 15px ;
-            font-weight: bolder;
-
+            padding: 15px 0;
         }
-
         ul.brand{
-
             @extend %align-center;
             padding: 15px 0;
             margin-bottom: 0;
-
             li{
-                
                 padding: 0 20px;
                 display: inline;
-
             }
-
         }
-
         .authors{
-
             @extend .row;
             @extend %align-center;
             max-width: $large-container;
             padding: 60px 15px;
             p{
-
                 font-weight: 400;
                 font-size: 2rem;
                 line-height: 1.25em;
                 color: $p-color;
-
             }
             .author{
-
                 @extend .four;
                 @extend .columns;
-                
                 img{
-
                     vertical-align: middle;
                     border-radius: 100%;
-
                 }
                 a{
-
                     display: inline;
-
                 }
                 &:before{
-
                     content: '“';
                     font-size: 8rem;
                     color: #f7931d;
                     line-height: 1em;
                     height: 40px;
                     display: block;
-                
                 }   
-
             }
         }
     }
 }
 
 footer{
-
-    height: 250px;
-
+    padding: 60px 0;
     img{
-
+        padding-bottom: 15px;
         @extend %align-center;
-
     }
-    .vertial{
-
-        @extend %align-vertical;
+    .my-container{
+        @extend .phablet-width80; 
+        @extend %align-center;        
         ul{
-
             @extend %align-center;
+            text-align: center;
             padding: 15px 0;
+            margin-bottom: 0;
             li{
-
+                display: inline-block;
                 padding: 5px 10px;
-                display: inline;
-
             }
-
         }
 
-    }
-    div{
-
-        @extend %align-center;
-        color: $p-color;
-
+        div{
+            text-align: center;
+            padding-top: 15px;
+            @extend %align-center;
+            color: $p-color;
+        }
     }
 
 }
