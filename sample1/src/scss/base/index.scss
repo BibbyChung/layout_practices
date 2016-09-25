@@ -1,0 +1,43 @@
+//@extend %test;
+body {
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap; //flex-direction and flex-wrap
+}
+
+header {
+    @extend %test;
+    background-color: lightgreen;
+}
+
+main {
+    @extend %test;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+article {
+    @extend %test;
+    background-color: blueviolet;
+    //flex: 0 1 auto; 
+    flex: 2 1 auto; //flex-grow, flex-shrink and flex-basis
+}
+
+nav,
+aside {
+    @extend %test;
+    background-color: burlywood;
+    flex: 0 1 auto;
+}
+
+footer {
+    @extend %test;
+    background-color: lightpink;
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        flex-flow: column nowrap;
+    }
+}
