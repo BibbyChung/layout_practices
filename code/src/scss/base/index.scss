@@ -15,20 +15,18 @@ main {
     height: 100%;
     display: flex;
     flex-flow: row nowrap;
-}
-
-article {
-    @extend %test;
-    background-color: blueviolet;
-    //flex: 0 1 auto; 
-    flex: 2 1 auto; //flex-grow, flex-shrink and flex-basis
-}
-
-nav,
-aside {
-    @extend %test;
-    background-color: burlywood;
-    flex: 0 1 auto;
+    article {
+        @extend %test;
+        background-color: blueviolet;
+        //flex: 0 1 auto; 
+        flex: 2 1 auto; //flex-grow, flex-shrink and flex-basis
+    }
+    nav,
+    aside {
+        @extend %test;
+        background-color: burlywood;
+        flex: 0 1 auto;
+    }
 }
 
 footer {
