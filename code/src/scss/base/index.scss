@@ -5,6 +5,7 @@ main {
 
 .Grid {
     display: flex;
+    flex-flow: row nowrap;
 }
 
 .Grid-cell {
@@ -105,6 +106,12 @@ main {
 
 
 /* Small to medium screens */
+
+@media (max-width: 30em){
+    .rwdGrid{
+        flex-flow: column nowrap;
+    }
+}
 
 @media (min-width: 24em) {
     .small-Grid--fit {
