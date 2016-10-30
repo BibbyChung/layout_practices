@@ -1,0 +1,33 @@
+.HolyGrail {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.HolyGrail-body {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.HolyGrail-nav {
+    order: -1;
+}
+
+@media (min-width: 768px) {
+    .HolyGrail-body {
+        flex-flow: row nowrap;
+        flex: 1 0 auto;
+    }
+    .HolyGrail-content {
+        @include test-border;
+        @include test-bg;
+        flex: 1 0 auto;
+    }
+    .HolyGrail-nav,
+    .HolyGrail-ads {
+        @include test-border;
+        @include test-bg;
+        /* 12em is the width of the columns */
+        flex: 0 0 12em;
+    }
+}
