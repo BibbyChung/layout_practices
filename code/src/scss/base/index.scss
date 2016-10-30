@@ -1,0 +1,72 @@
+%grid {
+    @extend %cell;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start
+}
+
+%cell {
+    flex: 1; //1 1 0;
+}
+
+@mixin imageWidthHeight($num) {
+    width: $num;
+    height: $num;
+}
+
+.cutter {
+    margin: -1em 0 0em -1em;
+}
+
+.cutter-cell {
+    padding: 1em 0 0 1em;
+}
+
+.layout {
+    padding: 1em;
+}
+
+.grid-dh {
+    @extend %grid;
+    flex-direction: row;
+}
+
+.grid-dv {
+    @extend %grid;
+    flex-direction: column;
+}
+
+.grid-cell {
+    @extend %cell;
+}
+
+.media {
+    @extend %test-border;
+    background-color: silver;
+    padding: 1em;
+}
+
+.image {
+    @include imageWidthHeight(70px);
+    margin-right: 1em;
+}
+
+.image-reverse {
+    @include imageWidthHeight(70px);
+    margin-left: 1em;
+    order: 1;
+}
+
+.image1 {
+    @include imageWidthHeight(40px);
+    margin-right: 1em;
+}
+
+.icon {
+    margin-right: 1em;
+}
+
+.icon-center {
+    margin-right: 1em;
+    align-self: center;
+}
