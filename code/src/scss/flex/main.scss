@@ -3,6 +3,11 @@ $headerHeight:7.5rem;
 $font-color-active: black;
 $firstSectionHeight:50rem;
 //----common----
+//prevent one line space
+a>img {
+    display: block;
+}
+
 .vCenter {
     display: flex;
     flex-flow: row nowrap;
@@ -196,6 +201,38 @@ main {
         }
         button {
             color: white;
+        }
+    }
+    .fifth {
+        height: 40rem;
+        .content {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-start;
+            &>img {
+                align-self: flex-end;
+            }
+            .dumb {
+                width: 4rem;
+            }
+            .rightContent {
+                max-width: 39rem;
+                align-self: center;
+                p {
+                    color: #979797
+                }
+                div {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    button {
+                        margin-bottom: 0;
+                        align-self: center;
+                    }
+                }
+                .dumb {
+                    width: 2rem;
+                }
+            }
         }
     }
     // section {
