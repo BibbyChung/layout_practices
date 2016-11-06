@@ -44,7 +44,7 @@ gulp.task('sass', function () {
 
 });
 
-gulp.task("default", (cb) => {
+gulp.task("build", (cb) => {
     runSequence(
         "sass",
         "copy_asset_to_dist",
