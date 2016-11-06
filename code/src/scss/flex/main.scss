@@ -60,7 +60,7 @@ h4 {
     }
 }
 
-//----special----
+//----specific----
 body {
     display: flex;
     flex-flow: column nowrap;
@@ -172,9 +172,35 @@ main {
             }
         }
     }
-    section {
-        @include test-border;
+    .fourth {
+        height: 39.8rem;
+        background-color: #41c1c8;
+        color: white;
+        .content {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-start;
+        }
+        .leftContent {
+            max-width: 39rem;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: flex-start;
+            align-self: center;
+        }
+        .dumb {
+            width: 4rem;
+        }
+        img {
+            align-self: flex-end;
+        }
+        button {
+            color: white;
+        }
     }
+    // section {
+    //     @include test-border;
+    // }
 }
 
 footer {
