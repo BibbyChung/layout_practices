@@ -48,11 +48,11 @@ gulp.task('sass', () => {
 
     let m = merge();
 
-    let normalCss = sassFun('./src/scss/normal/css.scss', './dist/css/normal');
+    let normalCss = sassFun('./src/scss/normal/index.scss', './dist/css/normal');
     m.add(normalCss);
 
-    // let flexCss = sassFun('./src/scss/flex/css.scss', './dist/flex/css');
-    // m.add(flexCss);
+    let flexCss = sassFun('./src/scss/flex/index.scss', './dist/css/flex');
+    m.add(flexCss);
 
     return m;
 

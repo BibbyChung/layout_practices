@@ -1,11 +1,16 @@
-
-
-%test{
-
+@mixin test-border {
     border: 1px solid red;
-
 }
 
+@mixin test-bg {
+    background-color: whitesmoke;
+}
 
+%test-border {
+    @include test-border;
+    //background-color: silver;
+}
 
-
+%test-bg {
+    @include test-bg;
+}
