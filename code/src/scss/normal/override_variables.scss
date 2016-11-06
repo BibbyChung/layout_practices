@@ -1,11 +1,6 @@
-// myself
-$large-container: 1260px;
-$litter-container: 780px;
-$p-color : #979797;
-$index-aside-width: 390px;
 // override
 $fa-font-path: "../../fonts";//font-awesome
-$container-width: $large-container;
+$container-width: 1260px;
 $button-height: 45px;
 $bp-zero: "min-width: 0px" !default;
 $bp-less-than-phablet: "max-width: 550px" !default;
