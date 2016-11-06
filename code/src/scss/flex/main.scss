@@ -235,6 +235,54 @@ main {
             }
         }
     }
+    .sixth {
+        height: 51rem;
+        background-color: #F9F9F9;
+        .content {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: flex-start;
+        }
+        h2 {
+            align-self: center;
+        }
+        .partner {
+            display: flex;
+            flex-flow: row nowrap;
+            align-self: center;
+            a {
+                margin: 2rem 1rem;
+            }
+        }
+        .author {
+            display: flex;
+            flex-flow: row nowrap;
+            align-self: center;
+            div {
+                padding: 2rem;
+                flex: 1;
+            }
+            &>div:before {
+                content: '“';
+                font-size: 8rem;
+                color: #f7931d;
+                line-height: 1em;
+                height: 40px;
+                display: block;
+            }
+            a>img {
+                display: inline;
+                border-radius: 100%;
+                vertical-align: middle;
+            }
+            p {
+                font-size: 2rem;
+                font-weight: 400;
+                line-height: 2rem;
+                color: #979797;
+            }
+        }
+    }
     // section {
     //     @include test-border;
     // }
