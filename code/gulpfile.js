@@ -21,6 +21,16 @@ gulp.task("copy_asset_to_dist", () => {
     ]).pipe(gulp.dest("./dist/"));
     m.add(dist);
 
+    let meterialCss_js = gulp.src([
+        "./node_modules/materialize-css/dist/js/**/*"
+    ]).pipe(gulp.dest("./dist/js"));
+    m.add(meterialCss_js);
+
+    let meterialCss_fonts = gulp.src([
+        "./node_modules/materialize-css/dist/fonts/**/*"
+    ]).pipe(gulp.dest("./dist/fonts"));
+    m.add(meterialCss_fonts);
+
     return m;
 
 });
